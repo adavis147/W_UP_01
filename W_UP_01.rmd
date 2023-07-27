@@ -61,8 +61,14 @@ In this table, it is shown that the average amount of push ups completed by a pl
 
 <!--State hypothesis clearly. Make sure your discussion of the inferential test covers all the aspects that the test output produces, such as test statistic, p-value etc. Make a decision about the null hypothesis, explain the assumptions on which the selected test/procedure was based, and why the chosen procedure satisies the assumptions and is appropriate to answer the research question!-->
 
+```{r}
+t.test(pushups~position,data=mydata)
+```
+
+The Welch Two Sample t-test expresses the p-value as 0.000009421. This proves that there is a true difference in the average amount of push ups completed by either a line player or a skill player. Skill players are doing 3 times more push ups than the line players, concluding that we must reject the null hypothesis.
 
 # Discussion and Conclusion
 
 <!--Discussion and conclusion here. If you found a relationship be sure to consider whether the relationship occurs because one of the variables causes the other, or whether they perhaps are related for some other reason. Watch the chapter 6 videos from the George Town videos collection.!-->
+
 
